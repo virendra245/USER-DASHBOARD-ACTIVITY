@@ -1,0 +1,74 @@
+html
+  head
+    title HOME PAGE USER DASHBOARD ACTIVITY
+    script(src='http://code.jquery.com/jquery-1.6.2.min.js')
+    link(rel='stylesheet', type='text/css', href='/timeline-2.9.0/gh.css')
+    style.
+      h1 {
+      color: orange;
+      text-align:center;
+      top:160;
+      left:470;
+      }
+      h2 {
+      color: blue;
+      text-align:center;
+      top:250;
+      left:370;
+      }
+      div.wrapper {
+      text-align:center;
+      margin-right: 100;
+      }
+      div.w1 {
+      text-align:center;
+      margin-left: -25;
+      margin-top: 20;
+      }
+      ::-webkit-input-placeholder {
+      color:black;
+      }
+      :-moz-placeholder {
+      color:black;
+      opacity:1;
+      }
+      ::-moz-placeholder {
+      color:black;
+      opacity:1;
+      }
+      :-ms-input-placeholder {
+      color:black;
+      }
+    script.
+      function validate(){
+      if( document.myForm.userName.value == "Enter email" || document.myForm.userName.value == ""){
+      alert( "Please Enter email for user activity" );
+      // document.myForm.userName.focus() ;
+      return false;
+      }
+      return(true);
+      }
+  body
+    div(style='\
+    width:  #{ width }px;\
+    height: #{ height }px ;\
+    border: 1px solid;\
+    overflow: hidden;\
+    position: absolute;\
+    background-color:dimgrey;')
+      p
+        span(style="background-image:url('https://www.google.com/a/proptiger.com/images/logo.gif?alpha=1&service=google_default');background-size:contain;max-width:144px;max-height:40px; margin-top: auto;")
+          img(src='https://www.google.com/a/proptiger.com/images/logo.gif?alpha=1&service=google_default', style='max-width:144px;max-height:40px; margin-top:-18')
+      h1 WELCOME
+      h2 USER DASHBOARD ACTIVITY
+      //
+        <p><span style="background-image:url('https://www.google.com/a/proptiger.com/images/logo.gif?alpha=1&amp;service=google_default');background-size:contain;width:30%; height:20%;">
+        <img src="https://www.google.com/a/proptiger.com/images/logo.gif?alpha=1&amp;service=google_default" style="width:30%; height:20%; left:350"></span></p>
+      form(name='myForm', action='/', onsubmit='return(validate());', method='post')
+        .wrapper
+          input(type='text', name='userName', placeholder='Enter email', style='background-color:#23D7AE;margin-left: 100;width: 200;height: 30;')
+        .w1
+          // <button type="submit" >Submit</button>
+          input(type='submit', style='width: 90;height: 25;')
+        input(type='text', name='width1', value='#{ width }', style='background-color:#F2E6E3; display:none')
+        input(type='text', name='height1', value=' #{ height }', style='background-color:#F2E6E3;display:none')

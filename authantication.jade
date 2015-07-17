@@ -1,0 +1,26 @@
+html
+  head
+    title
+      | AUTHANTICATION ERROR
+    style.
+      h1 {
+      color: orange;
+      text-align: center;
+      top:250;
+      left:470;
+      }
+      div.in {
+      text-align:center;
+      }
+  body
+    div(style='\
+    width: #{ wt }px ;\
+    height: #{ ht }px ;\
+    border: 1px solid;\
+    overflow: hidden;\
+    position: relative;\
+    background-color: white;')
+      h1 USER DOES NOT EXIST
+      img(src='/timeline-2.9.0/studentmarket.jpg', style='width:60%;height:50%; margin-left:130; background-color: rgba(161, 219, 19, 0.57);')
+      .in
+        input(type='button', value='CLICK FOR USER ACTIVITY', onclick='history.go(-1);return true;', style='background-color: rgba(161, 219, 19, 0.57); margin-top:20')

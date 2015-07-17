@@ -1,0 +1,113 @@
+div.timeline-frame {
+            border-color: purple;
+            border-width: 1px;
+        }
+
+body {
+  font: 10pt arial;
+}
+
+div.timeline-canvas {
+    background-color: #FFF4F7;
+}
+
+div.timeline-event {
+    border-color: #F991A3;
+    background-color: pink;
+}
+div.timeline-event-selected {
+    border-color: orange;
+    background-color: yellow;
+}
+div.timeline-event-box {
+    font-size: 11pt;
+    font-family: purisa, cursive;
+    color: purple;
+    border-width: 2px;
+}
+div.timeline-event-line {
+    border-width: 2px;
+}
+div.timeline-event-dot {
+    border-width: 4px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+}
+div.timeline-event-range {
+    font-size: 10pt;
+    font-family:  purisa, cursive;
+    color: purple;
+    border-width: 2px;
+}
+
+div.timeline-axis {
+    border-color: purple;
+    border-width: 1px;
+}
+div.timeline-axis-grid {
+    border-width: 1px;
+}
+div.timeline-axis-grid-minor {
+    border-color: #FFD7DD;
+}
+div.timeline-axis-grid-major {
+    border-color: pink;
+}
+
+div.timeline-axis-text {
+    font-family:  purisa, cursive;
+    font-size: 14px;
+    color: purple;
+}
+div.timeline-axis-text-minor {
+    padding-top: 9px;
+}
+div.timeline-axis-text-major {
+    font-weight: bold;
+    padding-top: 2px;
+    padding-bottom: 8px;
+}
+
+div.inp{
+        text-align: start;
+        margin-left: -70;
+        margin-top: 25;
+    }
+
+div.sb{
+    text-align: start;
+    margin-left: 170;
+    margin-top: -26;
+}
+div.dt{
+  text-align: center;
+  font-size: 16;
+  font-family: purisa, cursive;
+  margin-top: -50;
+  margin-left: 100;
+  color:blue;
+}
+div.Adjust{
+    text-align: start;
+    margin-left: 250;
+    margin-top: -26;
+  }
+  div.center{
+    text-align: start;
+    margin-left: 320;
+    margin-top: -26;
+  }
+  ::-webkit-input-placeholder {
+    color:black;
+  }
+  :-moz-placeholder {
+    color:black;
+    opacity:1;
+  }
+  ::-moz-placeholder {
+    color:black;
+    opacity:1;
+  }
+  :-ms-input-placeholder {
+    color:black;
+  }

@@ -1,0 +1,74 @@
+html
+  head
+    title
+      | Authantication error
+    style.
+      h1 {
+      color: orange;
+      text-align: center;
+      top:250;
+      left:470;
+      font-family: purisa, cursive;
+      font-size: 20;
+      }
+      div.in {
+      text-align:center;
+      }
+      div.wrapper {
+      text-align:center;
+      margin-right: 100;
+      margin-top: 20;
+      }
+      div.dt{
+      text-align: center;
+      font-size: 20;
+      font-family: purisa, cursive;
+      margin-top: -50;
+      color:rgb(0, 245, 255);
+      background-color: dimgrey;
+      }
+      div.w1 {
+      text-align:center;
+      margin-left: -25;
+      margin-top: 20;
+      }
+      ::-webkit-input-placeholder {
+      color:black;
+      }
+      :-moz-placeholder {
+      color:black;
+      opacity:1;
+      }
+      ::-moz-placeholder {
+      color:black;
+      opacity:1;
+      }
+      :-ms-input-placeholder {
+      color:black;
+      }
+    script.
+      function validate(){
+      if( document.myForm.userName.value == "Enter email" || document.myForm.userName.value == ""){
+      alert( "Please Enter email for user activity" );
+      // document.myForm.userName.focus() ;
+      return false;
+      }
+      return(true);
+      }
+  body
+    div(style='\
+    width: #{ wt }px ;\
+    height: #{ ht }px ;\
+    border: 1px solid;\
+    overflow: hidden;\
+    position: relative;\
+    background-color: dimgrey;')
+      p
+        span(style="background-image:url('https://www.google.com/a/proptiger.com/images/logo.gif?alpha=1&service=google_default');background-size:contain;max-width:144px;max-height:40px; margin-top: auto;")
+          img(src='https://www.google.com/a/proptiger.com/images/logo.gif?alpha=1&service=google_default', style='max-width:144px;max-height:40px; margin-top:-20')
+      .dt
+        p  
+      h1  authantication error
+      img(src='/timeline-2.9.0/401.jpg', style='width:60%;height:50%; margin-left:130; background-color: rgba(161, 219, 19, 0.57);')
+
+
